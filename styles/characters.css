@@ -1,0 +1,134 @@
+.characters{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 4em 0 7em;
+}
+
+.setas{
+    width: 3.5rem;
+    margin: 0 2em;
+    margin-top: 15em;
+}
+
+.setas:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.carousel{
+    border-radius: 30px;
+    overflow: hidden;
+    height: 738.5px;
+    width: 500px;
+    position: relative;
+}
+
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+
+.container__name{
+    padding: 1em 0 0 0;
+    cursor: pointer;
+    text-align: center;
+    margin-bottom: 1em;
+    font-family: var(--font-cinzel);
+    color: var(--gray);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.container__img{
+    box-shadow: 2px 2px 4px var(--black);
+    object-fit: cover;
+    height: 738.5px;
+    width: 500px;
+    border-radius: 30px;
+    position: relative; /* Mantém a imagem como o fundo principal */
+    z-index: 1; /* Fica atrás do texto */
+}
+
+.container__img:hover{
+    cursor: pointer;
+    opacity: 70%;
+}
+
+.container__char{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.container__text{
+    position: absolute;
+    top: 10%; /* Ajusta a posição vertical (10% acima da borda inferior) */
+    left: 50%; /* Centraliza horizontalmente */
+    transform: translateX(-50%); /* Ajusta o alinhamento central */
+    z-index: 2; /* Fica na frente da imagem */
+    object-fit: cover;
+    width: 500px;
+}
+
+.container__text__p{
+    padding: 0.8em 2em;
+    color: var(--gray);
+    font-family: var(--font-cinzel);
+    text-align: justify;
+    font-size: 18px;
+    line-height: 1.3;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+    cursor: pointer;
+}
+
+.none{
+    display: none;
+}
+
+.img__opa{
+    opacity: 50%;
+}
+
+@media screen and (max-width: 1300px) {
+    .carousel {
+        width: 270px; 
+        height: 400px; 
+    }
+
+    .container {
+        width: 270px; 
+    }
+
+    .container__img {
+        width: 270px; 
+        height: 400px; 
+    }
+
+    .container__text {
+        width: 270px; 
+        top: 20%; 
+    }
+
+    .container__name {
+        font-size: 20px;
+    }
+
+    .container__text__p {
+        font-size: 10px;
+        padding: 1em 2em;
+        line-height: 1;
+    }
+
+    .setas {
+        margin: 1em;
+        margin-top: 2em; 
+        width: 2rem;
+    }
+
+    .characters {
+        margin: 2em 0;
+    }
+}

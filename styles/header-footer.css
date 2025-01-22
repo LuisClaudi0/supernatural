@@ -1,0 +1,28 @@
+.header-footer{
+    background-image: url(/styles/assets/outros/FUNDO-PRETO-SUSPENSE.png);
+    background-size: 100%;
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-footer__title{
+    color: var(--white);
+    font-family: var(--font-cinzel);
+    font-weight: 300;
+    font-size: 24px;
+    text-align: center;
+}
+
+.header-footer__img{
+    width: 2em;
+    height: 2em;
+    padding: 0 1.5em;
+}
+
+@media screen and (max-width: 1300px){
+    .header-footer__title{
+        font-size: 17px;
+    }
+}

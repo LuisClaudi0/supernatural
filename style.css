@@ -1,0 +1,40 @@
+@import url(styles/header-footer.css);
+@import url(styles/banner.css);
+@import url(styles/descript.css);
+@import url(styles/characters.css);
+@import url(styles/monsters.css);
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=UnifrakturCook:wght@700&display=swap');
+@font-face { font-family: 'Supernatural_Knight';
+            src: url('./styles/fonts/supernatural_knight/Supernatural_Knight.ttf') format('truetype');}
+
+:root{
+    --font-cinzel: "Cinzel Decorative", serif;
+    --font-uni: "UnifrakturCook", serif;
+    --font-supernatural: 'Supernatural_Knight', serif;
+    --white: #ffffff;
+    --black: #000000;
+    --gray: #eaebe1;
+    --dark-gray: #2d2d2d;
+}
+
+body{
+    font-size: 16px;
+    background-color: var(--dark-gray);
+}
+
+.background{
+    background-image: url(styles/assets/outros/ARMADILHA-DO-DIABO-transparent.png);
+    background-repeat: repeat;
+    background-size: 70px 70px;
+}
+
+.none{
+    display: none;
+}
+
+@media (max-width: 1300px) {
+    .background{
+        background-size: 45px 45px;
+    }
+}

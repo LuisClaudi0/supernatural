@@ -1,0 +1,31 @@
+.descript{
+    text-align: justify;
+    margin: 2em 20em;
+    font-family: var(--font-supernatural);
+    color: var(--gray);
+    padding: 2em 0;
+}
+
+.descript__title{
+    text-align: center;
+    font-weight: 700;
+    font-size: 44px;
+    padding-bottom: 0.5em;
+}
+
+.descript__p{
+    padding-top: 1em;
+    font-size: 28px;
+    font-weight: 100;
+    line-height: 1.3;
+}
+
+@media (max-width: 1300px) {
+    .descript{
+        margin: 2em 2em;
+    }
+
+    .descript__p{
+        font-size: 18px;
+    }
+}

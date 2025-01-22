@@ -1,0 +1,134 @@
+.monsters{
+    padding: 3em 2em 8em 2em;
+    font-family: var(--font-cinzel);
+}
+
+.monster__img{
+    width: 15rem;
+    border-radius: 0.7em;
+    cursor: pointer;
+}
+
+.monsters__row{
+    display: flex;
+    justify-content: center;
+}
+
+.row__monster{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2em 3em;
+}
+
+.monster__img:hover {
+    transform: scale(1.07);    /* Dá aquele zoom na imagem */
+  }
+
+.monster__name{
+    cursor: pointer;
+    margin: 2em 1em 1.3em 1em;
+    padding: 0.5em;
+    text-decoration: none;
+    color: var(--gray);
+    font-weight: 600;
+    font-size: 18px;
+    border: 1px solid var(--gray);
+    border-radius: 1em;
+}
+
+.monster__about{
+    margin: 2em 10em;
+    color: var(--gray);
+    text-align: center;
+}
+
+.about__img{
+    width: 20rem;
+    margin-bottom: 3em;
+}
+
+.about__title{
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.about__subt{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 1em 0;
+}
+
+.about__text{
+    margin: 0 10em;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.about__back{
+    border: 1px solid var(--gray);
+    margin: 4em 28em 0em 28em;
+    padding: 1em;
+    width: 10em auto;
+    border-radius: 10px;
+}
+
+.about__back:hover{
+    cursor: pointer;
+    background-color: var(--gray);
+    color: var(--dark-gray);
+}
+
+@media screen and (max-width: 1300px) {
+    
+    .monsters {
+        padding: 2em 0em; 
+        margin: 2em 0;
+    }
+
+    .monster__img {
+        width: 3rem; 
+        margin-bottom: 1em; 
+    }
+
+    .row__monster {
+        margin: 0.8em 0; 
+        padding: 0;
+        flex: 1 1 40%; 
+    }
+
+    .monster__name {
+        font-size: 8px; 
+        margin: 1.5em 0 1em 0;
+    }
+
+    .monster__about {
+        margin: 1em 0em; 
+    }
+
+    .about__img {
+        width: 100%;
+        max-width: 150px;
+        margin-bottom: 2em;
+        margin-top: 2em;
+    }
+
+    .about__title {
+        font-size: 20px;
+    }
+
+    .about__subt {
+        font-size: 18px;
+    }
+
+    .about__text {
+        margin: 0 2em;
+        font-size: 14px;
+    }
+
+    .about__back {
+        margin: 3em auto 2em auto;
+        padding: 0.8em;
+        width: 50%;
+    }
+}
